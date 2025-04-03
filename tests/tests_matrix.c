@@ -10,10 +10,10 @@ void test_create_and_free_matrix(void) {
     
     // Проверка выделенной памяти
     if (mat.data != NULL) {
-        for (int i = 0; i < mat.rows; i++) {
-            for (int j = 0; j < mat.cols; j++) {
-                mat.data[i][j] = i + j;
-                CU_ASSERT_EQUAL(mat.data[i][j], i + j);
+        for (int iter = 0; iter < mat.rows; iter++) {
+            for (int iter_2 = 0; iter_2 < mat.cols; iter_2++) {
+                mat.data[iter][iter_2] = iter + iter_2;
+                CU_ASSERT_EQUAL(mat.data[iter][iter_2], iter + iter_2);
             }
         }
     }
@@ -92,16 +92,16 @@ void test_multiply_matrices(void) {
     
     // Заполняем тестовые матрицы
     double aval = 1.0;
-    for (int i = 0; i < 2; i++) {
-        for (int j = 0; j < 3; j++) {
-            a.data[i][j] = aval++;
+    for (int iter = 0; iter < 2; iter++) {
+        for (int iter_2 = 0; iter_2 < 3; iter_2++) {
+            a.data[iter][iter_2] = aval++;
         }
     }
     
     double bval = 0.5;
-    for (int i = 0; i < 3; i++) {
-        for (int j = 0; j < 2; j++) {
-            b.data[i][j] = bval++;
+    for (int iter = 0; iter < 3; iter++) {
+        for (int iter_2 = 0; iter_2 < 2; iter_2++) {
+            b.data[iter][iter_2] = bval++;
         }
     }
     

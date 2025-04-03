@@ -31,10 +31,10 @@ int save_matrix_to_file(const Matrix* mat, const char* filename) {
         return -1;
     }
 
-    // Записываем размеры матрицы
+    // Размеры матрицы
     fprintf(file, "%d %d\n", mat->rows, mat->cols);
 
-    // Записываем данные матрицы
+    // Данные матрицы
     for (int iter = 0; iter < mat->rows; iter++) {
         for (int iter_2 = 0; iter_2 < mat->cols; iter_2++) {
             fprintf(file, "%.6f ", mat->data[iter][iter_2]);
