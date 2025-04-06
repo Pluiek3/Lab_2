@@ -1,10 +1,25 @@
-#ifndef MATRIX_STRUCT_H
-#define MATRIX_STRUCT_H
+/**
+ * @file matrix_struct.h
+ * @brief Заголовочный файл, определяющий структуру матрицы
+ * @defgroup Matrix Структуры данных матриц
+ * @{
+ */
 
-typedef struct {
-    int rows;      // Количество строк
-    int cols;      // Количество столбцов
-    double** data; // Указатель на данные матрицы
-} Matrix;
-
-#endif
+ #ifndef MATRIX_STRUCT_H
+ #define MATRIX_STRUCT_H
+ 
+ /**
+  * @brief Структура, представляющая матрицу
+  * 
+  * Структура содержит данные о размерах матрицы (количество строк и столбцов)
+  * и указатель на двумерный массив с элементами матрицы типа double.
+  */
+ typedef struct {
+     int rows;    /**< Количество строк в матрице */
+     int cols;    /**< Количество столбцов в матрице */
+     double** data; /**< Указатель на двумерный массив данных матрицы */
+ } Matrix;
+ 
+ #endif
+ 
+ /** @} */
