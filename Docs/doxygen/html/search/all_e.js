@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['структуры_20данных_20матриц_0',['Структуры данных матриц',['../group__Matrix.html',1,'']]]
+  ['quotes_0',['Quotes',['../classMyLibrary_1_1Example.html#autotoc_md26',1,'']]]
 ];

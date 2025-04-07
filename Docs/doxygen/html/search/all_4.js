@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['main_0',['main',['../main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.c']]],
-  ['main_2ec_1',['main.c',['../main_8c.html',1,'']]],
-  ['matrix_2',['Matrix',['../structMatrix.html',1,'']]],
-  ['matrix_5foperations_2eh_3',['matrix_operations.h',['../matrix__operations_8h.html',1,'']]],
-  ['multiply_5fmatrices_4',['multiply_matrices',['../group__MatrixOperations.html#ga2a536d3d18909f58751114066fb1267f',1,'multiply_matrices(Matrix mat1, Matrix mat2):&#160;matrix_operations.c'],['../group__MatrixOperations.html#ga2a536d3d18909f58751114066fb1267f',1,'multiply_matrices(Matrix mat1, Matrix mat2):&#160;matrix_operations.c']]]
+  ['elements_0',['Supported elements',['../classMyLibrary_1_1Example.html#autotoc_md22',1,'']]],
+  ['example_1',['Example',['../classMyLibrary_1_1Example.html',1,'MyLibrary']]],
+  ['examples_2',['Examples',['../md_Docs_2doxygen-awesome-css-main_2README.html#autotoc_md32',1,'']]],
+  ['extensions_3',['Extensions',['../md_Docs_2doxygen-awesome-css-main_2docs_2extensions.html',1,'']]]
 ];

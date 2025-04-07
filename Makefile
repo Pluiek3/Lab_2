@@ -4,8 +4,8 @@ CFLAGS = -Wall -Wextra -std=c99 -O2 -g
 INCLUDES = -I./src/include -I./src/matrix -I./src/output -I./tests
 LDFLAGS = -lm
 CUNIT_LIBS = -lcunit
+CLANG_FORMAT = clang-format -i --style=file
 
-# Targets
 TARGET = matrix_app
 TEST_TARGET = matrix_tests
 
@@ -15,17 +15,18 @@ TEST_DIR = tests
 SRCS = $(SRC_DIR)/main.c $(SRC_DIR)/matrix/matrix_operations.c $(SRC_DIR)/output/output.c
 TEST_SRCS = $(TEST_DIR)/tests_matrix.c $(TEST_DIR)/tests_output.c $(TEST_DIR)/test_runner.c
 
+# All source files that should be formatted
+FORMAT_SRCS = $(SRCS) $(TEST_SRCS)
+FORMAT_HEADERS = $(wildcard $(SRC_DIR)/include/*.h) \
+                 $(wildcard $(SRC_DIR)/matrix/*.h) \
+                 $(wildcard $(SRC_DIR)/output/*.h) \
+                 $(wildcard $(TEST_DIR)/*.h)
+
 # Object files
 OBJS = $(SRCS:.c=.o)
 TEST_OBJS = $(TEST_SRCS:.c=.o) $(filter-out $(SRC_DIR)/main.o, $(OBJS))
 
-# Headers
-HEADERS = $(wildcard $(SRC_DIR)/include/*.h) \
-          $(wildcard $(SRC_DIR)/matrix/*.h) \
-          $(wildcard $(SRC_DIR)/output/*.h) \
-          $(wildcard $(TEST_DIR)/*.h)
-
-.PHONY: all clean run test debug sanitize sanitize-test
+.PHONY: all clean run test debug sanitize sanitize-test format
 
 # Default target
 all: $(TARGET)
@@ -41,6 +42,10 @@ $(TEST_TARGET): $(TEST_OBJS)
 # Compile rules
 %.o: %.c $(HEADERS)
 	$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
+
+# Format source code
+format:
+	$(CLANG_FORMAT) $(FORMAT_SRCS) $(FORMAT_HEADERS)
 
 # Clean (добавляем удаление файлов санитайзеров)
 clean:

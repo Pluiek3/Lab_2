@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['data_0',['data',['../structMatrix.html#a650e1452576e2c59a410eebd79331560',1,'Matrix']]],
-  ['determinant_1',['determinant',['../group__MatrixOperations.html#ga65a94ae380c65ff2601e2d473e2ae9ed',1,'determinant(Matrix mat):&#160;matrix_operations.c'],['../group__MatrixOperations.html#ga65a94ae380c65ff2601e2d473e2ae9ed',1,'determinant(Matrix mat):&#160;matrix_operations.c']]]
+  ['block_0',['Code block',['../classMyLibrary_1_1Example.html#autotoc_md27',1,'']]],
+  ['browser_20support_1',['Browser support',['../md_Docs_2doxygen-awesome-css-main_2README.html#autotoc_md40',1,'']]],
+  ['button_2',['Fragment Copy Button',['../md_Docs_2doxygen-awesome-css-main_2docs_2extensions.html#extension-copy-button',1,'']]]
 ];
