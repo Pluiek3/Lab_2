@@ -124,8 +124,8 @@
      for (int iter = 0; iter < mat1.rows; iter++) {
          for (int iter_2 = 0; iter_2 < mat2.cols; iter_2++) {
              result.data[iter][iter_2] = 0;
-             for (int k = 0; k < mat1.cols; k++) {
-                 result.data[iter][iter_2] += mat1.data[iter][k] * mat2.data[k][iter_2];
+             for (int iter_3 = 0; iter_3 < mat1.cols; iter_3++) {
+                 result.data[iter][iter_2] += mat1.data[iter][iter_3] * mat2.data[iter_3][iter_2];
              }
          }
      }

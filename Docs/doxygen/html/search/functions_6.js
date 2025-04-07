@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['save_5fmatrix_5fto_5ffile_0',['save_matrix_to_file',['../output_8c.html#a73c5dcbc28c64141cb484da29d30a2e1',1,'output.c']]],
-  ['subtract_5fmatrices_1',['subtract_matrices',['../matrix__operations_8h.html#a9d01c8de5e79be4b729b26665fc3b57c',1,'matrix_operations.c']]]
+  ['register_5fmatrix_5foperations_5ftests_0',['register_matrix_operations_tests',['../tests__matrix_8c.html#afc1d34575d2e7485847eae1b7c5ecf2f',1,'tests_matrix.c']]],
+  ['register_5foutput_5foperations_5ftests_1',['register_output_operations_tests',['../tests__output_8c.html#acab1d0bf7fe66cd6742701b22f830aef',1,'tests_output.c']]]
 ];
