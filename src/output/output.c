@@ -1,7 +1,7 @@
 /**
  * @file output.c
  * @brief Реализация функций вывода матриц
- * @ingroup MatrixIO
+ * @ingroup Matrix_Output-Input
  */
 
 #include "output.h"

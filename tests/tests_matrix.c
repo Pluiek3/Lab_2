@@ -1,7 +1,7 @@
 /**
  * @file tests_matrix.c
  * @brief Тесты для операций с матрицами
- * @ingroup MatrixTests
+ * @ingroup Matrix_Tests
  */
 
 #include "tests_matrix.h"
@@ -269,12 +269,12 @@ void register_matrix_operations_tests() {
         return;
     }
 
-    CU_add_test(suite, "Create and Free Matrix", test_create_and_free_matrix);
-    CU_add_test(suite, "Load Matrix from File", test_load_matrix_from_file);
-    CU_add_test(suite, "Matrix Copy", test_copy_matrix);
-    CU_add_test(suite, "Matrix Addition", test_add_matrices);
-    CU_add_test(suite, "Matrix Multiplication", test_multiply_matrices);
-    CU_add_test(suite, "Matrix Transpose", test_transpose_matrix);
-    CU_add_test(suite, "Matrix Determinant", test_determinant);
-    CU_add_test(suite, "Matrix Subtraction", test_subtract_matrices);
+    CU_add_test(suite, "Создание и очистка матрицы", test_create_and_free_matrix);
+    CU_add_test(suite, "Загрузка матрицы из файла", test_load_matrix_from_file);
+    CU_add_test(suite, "Копирование матрицы", test_copy_matrix);
+    CU_add_test(suite, "Сложение матриц", test_add_matrices);
+    CU_add_test(suite, "Умножение матриц", test_multiply_matrices);
+    CU_add_test(suite, "Транспонирование матрицы", test_transpose_matrix);
+    CU_add_test(suite, "Детерминант матрицы", test_determinant);
+    CU_add_test(suite, "Вычитание матриц", test_subtract_matrices);
 }

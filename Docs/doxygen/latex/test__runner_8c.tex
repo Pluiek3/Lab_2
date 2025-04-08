@@ -1,0 +1,85 @@
+\doxysection{Файл tests/test\+\_\+runner.c}
+\hypertarget{test__runner_8c}{}\label{test__runner_8c}\index{tests/test\_runner.c@{tests/test\_runner.c}}
+
+
+Запуск тестов  
+
+
+{\ttfamily \#include $<$CUnit/\+CUnit.\+h$>$}\newline
+{\ttfamily \#include $<$CUnit/\+Basic.\+h$>$}\newline
+Граф включаемых заголовочных файлов для test\+\_\+runner.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{test__runner_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{test__runner_8c_a2beed4d7e5a22ed46c98153e5785f19e}{register\+\_\+matrix\+\_\+operations\+\_\+tests}} (void)
+\begin{DoxyCompactList}\small\item\em Регистрирует тесты, связанные с операциями над матрицами. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{test__runner_8c_a01815d0e4e2698a3c7f2c21e5c2a8bac}{register\+\_\+output\+\_\+operations\+\_\+tests}} (void)
+\begin{DoxyCompactList}\small\item\em Регистрирует тесты, связанные с операциями вывода. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{test__runner_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Главная функция, которая инициализирует фреймворк тестирования CUnit, регистрирует тестовые наборы и запускает тесты. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Запуск тестов 
+
+
+
+\doxysubsection{Функции}
+\Hypertarget{test__runner_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{test__runner_8c_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+\index{test\_runner.c@{test\_runner.c}!main@{main}}
+\index{main@{main}!test\_runner.c@{test\_runner.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Главная функция, которая инициализирует фреймворк тестирования CUnit, регистрирует тестовые наборы и запускает тесты. 
+
+Эта функция инициализирует реестр тестов CUnit, регистрирует тесты операций с матрицами и вывода, устанавливает основной режим работы в подробный, выполняет тесты и очищает реестр.
+
+\begin{DoxyReturn}{Возвращает}
+Возвращает 0 при успехе или ненулевой код ошибки, если инициализация или выполнение тестов не удались. 
+\end{DoxyReturn}
+\Hypertarget{test__runner_8c_a2beed4d7e5a22ed46c98153e5785f19e}\label{test__runner_8c_a2beed4d7e5a22ed46c98153e5785f19e} 
+\index{test\_runner.c@{test\_runner.c}!register\_matrix\_operations\_tests@{register\_matrix\_operations\_tests}}
+\index{register\_matrix\_operations\_tests@{register\_matrix\_operations\_tests}!test\_runner.c@{test\_runner.c}}
+\doxysubsubsection{\texorpdfstring{register\_matrix\_operations\_tests()}{register\_matrix\_operations\_tests()}}
+{\footnotesize\ttfamily void register\+\_\+matrix\+\_\+operations\+\_\+tests (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Регистрирует тесты, связанные с операциями над матрицами. 
+
+Эта функция должна содержать вызовы CU\+\_\+add\+\_\+test() для добавления отдельных тестов для операций над матрицами.
+
+Регистрирует тесты, связанные с операциями над матрицами.
+
+Создает тестовый набор и добавляет все тестовые случаи для проверки матричных операций. \Hypertarget{test__runner_8c_a01815d0e4e2698a3c7f2c21e5c2a8bac}\label{test__runner_8c_a01815d0e4e2698a3c7f2c21e5c2a8bac} 
+\index{test\_runner.c@{test\_runner.c}!register\_output\_operations\_tests@{register\_output\_operations\_tests}}
+\index{register\_output\_operations\_tests@{register\_output\_operations\_tests}!test\_runner.c@{test\_runner.c}}
+\doxysubsubsection{\texorpdfstring{register\_output\_operations\_tests()}{register\_output\_operations\_tests()}}
+{\footnotesize\ttfamily void register\+\_\+output\+\_\+operations\+\_\+tests (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Регистрирует тесты, связанные с операциями вывода. 
+
+Эта функция должна содержать вызовы CU\+\_\+add\+\_\+test() для добавления отдельных тестов для операций вывода.
+
+Регистрирует тесты, связанные с операциями вывода.
+
+Создает тестовый набор и добавляет тесты для\+:
+\begin{DoxyItemize}
+\item Базового вывода матрицы
+\item Граничных случаев
+\item Сохранения в файл
+\item Обработки ошибок
+\item Форматированного вывода 
+\end{DoxyItemize}

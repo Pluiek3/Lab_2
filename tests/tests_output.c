@@ -1,7 +1,7 @@
 /**
  * @file tests_output.c
  * @brief Тесты для функций вывода матриц
- * @ingroup MatrixIOTests
+ * @ingroup Matrix_I_O_Tests
  */
 
 #include "tests_output.h"
@@ -155,16 +155,15 @@ void test_print_matrix_formatted(void) {
  * - Форматированного вывода
  */
 void register_output_operations_tests() {
-    CU_pSuite suite = CU_add_suite("Matrix Output", NULL, NULL);
+    CU_pSuite suite = CU_add_suite("Вывод матриц", NULL, NULL);
     if (!suite) {
         CU_cleanup_registry();
         return;
     }
 
-    // Регистрация тестов вывода
-    CU_add_test(suite, "Basic Matrix Print", test_print_matrix_basic);
-    CU_add_test(suite, "Edge Cases Printing", test_print_matrix_edge_cases);
-    CU_add_test(suite, "Save Matrix to File", test_save_matrix_to_file_normal);
-    CU_add_test(suite, "Save Matrix Errors", test_save_matrix_to_file_errors);
-    CU_add_test(suite, "Formatted Matrix Print", test_print_matrix_formatted);
+    CU_add_test(suite, "Базовый вывод", test_print_matrix_basic);
+    CU_add_test(suite, "Граничные случаи", test_print_matrix_edge_cases);
+    CU_add_test(suite, "Сохранение в файл", test_save_matrix_to_file_normal);
+    CU_add_test(suite, "Ошибки сохранения", test_save_matrix_to_file_errors);
+    CU_add_test(suite, "Форматированный вывод", test_print_matrix_formatted);
 }

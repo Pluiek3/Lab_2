@@ -5,6 +5,7 @@ UseTab: Never
 BreakBeforeBraces: Attach
 AllowShortFunctionsOnASingleLine: None
 DerivePointerAlignment: false
+KeepEmptyLinesAtTheStartOfBlocks: false  
 PointerAlignment: Right
 SortIncludes: false
 NamespaceIndentation: All

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['customization_0',['Customization',['../md_Docs_2doxygen-awesome-css-main_2docs_2customization.html',1,'']]]
+  ['матричные_20вычисления_0',['Матричные вычисления',['../index.html',1,'']]]
 ];

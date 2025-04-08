@@ -1,7 +1,7 @@
 /**
- * @file matrix_struct.h
+ * @file config.h
  * @brief Заголовочный файл, определяющий структуру матрицы
- * @defgroup Matrix Структуры данных матриц
+ * @defgroup Matrix_Struct
  * @{
  */
 

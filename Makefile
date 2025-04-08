@@ -1,4 +1,3 @@
-# Compiler and flags
 CC = gcc
 CFLAGS = -Wall -Wextra -std=c99 -O2 -g
 INCLUDES = -I./src/include -I./src/matrix -I./src/output -I./tests
@@ -9,7 +8,6 @@ CLANG_FORMAT = clang-format -i --style=file
 TARGET = matrix_app
 TEST_TARGET = matrix_tests
 
-# Source files
 SRC_DIR = src
 TEST_DIR = tests
 SRCS = $(SRC_DIR)/main.c $(SRC_DIR)/matrix/matrix_operations.c $(SRC_DIR)/output/output.c

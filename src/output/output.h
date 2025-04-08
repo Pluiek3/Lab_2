@@ -1,7 +1,7 @@
 /**
- * @file matrix_output.h
+ * @file output.h
  * @brief Заголовочный файл для функций вывода матриц
- * @defgroup MatrixOutput Функции вывода матриц
+ * @ingroup Matrix_Output-Input
  * @{
  */
 

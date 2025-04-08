@@ -1,7 +1,7 @@
 /**
  * @file matrix_operations.h
  * @brief Заголовочный файл с объявлениями операций над матрицами
- * @defgroup MatrixOperations Основные матричные операции
+ * @defgroup Matrix_Operations
  * @{
  */
 

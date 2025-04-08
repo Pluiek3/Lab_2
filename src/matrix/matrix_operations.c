@@ -1,6 +1,8 @@
 /**
- * @file matrix_operations.h
- * @brief Заголовочный файл для операций с матрицами
+ * @file matrix_operations.c
+ * @brief Файл для операций с матрицами
+ * @defgroup Matrix_Operations
+ * @{
  */
 
 #include "matrix_operations.h"
