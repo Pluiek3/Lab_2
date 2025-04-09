@@ -13,7 +13,7 @@
  * - Правильность установки размеров
  * - Выделение памяти
  * - Возможность записи и чтения значений
- * - Корректность освобождения памяти
+ * - Правильность освобождения памяти
  */
 void test_create_and_free_matrix(void) {
     Matrix mat = create_matrix(3, 3);
@@ -61,7 +61,6 @@ void test_load_matrix_from_file(void) {
         CU_ASSERT_DOUBLE_EQUAL(mat.data[0][0], 1.5, 0.0001);
         CU_ASSERT_DOUBLE_EQUAL(mat.data[1][2], 6.5, 0.0001);
 
-        // Удаляем тестовый файл
         remove(filename);
         free_matrix(mat);
     }

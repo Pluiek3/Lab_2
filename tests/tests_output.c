@@ -80,7 +80,6 @@ void test_save_matrix_to_file_normal(void) {
     Matrix mat = create_test_matrix(2, 2);
     CU_ASSERT(mat.rows == 2 && mat.cols == 2);
 
-    // Сохраняем матрицу
     CU_ASSERT(save_matrix_to_file(&mat, filename) == 0);
 
     // Проверяем содержимое файла
@@ -91,7 +90,7 @@ void test_save_matrix_to_file_normal(void) {
     CU_ASSERT(fscanf(file, "%d %d", &rows, &cols) == 2);
     CU_ASSERT(rows == 2 && cols == 2);
 
-    // Проверяем значения
+    // Проверка значений
     double val;
     for (int iter = 0; iter < 2; iter++) {
         for (int iter_2 = 0; iter_2 < 2; iter_2++) {
@@ -137,7 +136,6 @@ void test_print_matrix_formatted(void) {
     Matrix mat = create_test_matrix(1, 3);
     CU_ASSERT(mat.rows == 1 && mat.cols == 3);
 
-    // Проверяем, что функция не падает
     print_matrix_formatted(&mat, "%8.3f ");
     print_matrix_formatted(&mat, "%+.2e ");
 
