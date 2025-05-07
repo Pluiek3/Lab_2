@@ -1,0 +1,111 @@
+\doxysection{Файл src/output/output.c}
+\hypertarget{output_8c}{}\label{output_8c}\index{src/output/output.c@{src/output/output.c}}
+
+
+Реализация функций вывода матриц  
+
+
+{\ttfamily \#include "{}output.\+h"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+Граф включаемых заголовочных файлов для output.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{output_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{output_8c_a42568bfefe87bc0e1dcf1e924da29b45}{print\+\_\+matrix}} (const \mbox{\hyperlink{structMatrix}{Matrix}} \texorpdfstring{$\ast$}{*}mat, int precision)
+\begin{DoxyCompactList}\small\item\em Печатает матрицу с заданной точностью \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{output_8c_a73c5dcbc28c64141cb484da29d30a2e1}{save\+\_\+matrix\+\_\+to\+\_\+file}} (const \mbox{\hyperlink{structMatrix}{Matrix}} \texorpdfstring{$\ast$}{*}mat, const char \texorpdfstring{$\ast$}{*}filename)
+\begin{DoxyCompactList}\small\item\em Сохраняет матрицу в файл \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{output_8c_a0c58ba2fba5645f4da950dd3dd5fc091}{print\+\_\+matrix\+\_\+formatted}} (const \mbox{\hyperlink{structMatrix}{Matrix}} \texorpdfstring{$\ast$}{*}mat, const char \texorpdfstring{$\ast$}{*}format)
+\begin{DoxyCompactList}\small\item\em Печатает матрицу с пользовательским форматом \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Реализация функций вывода матриц 
+
+
+
+\doxysubsection{Функции}
+\Hypertarget{output_8c_a42568bfefe87bc0e1dcf1e924da29b45}\label{output_8c_a42568bfefe87bc0e1dcf1e924da29b45} 
+\index{output.c@{output.c}!print\_matrix@{print\_matrix}}
+\index{print\_matrix@{print\_matrix}!output.c@{output.c}}
+\doxysubsubsection{\texorpdfstring{print\_matrix()}{print\_matrix()}}
+{\footnotesize\ttfamily void print\+\_\+matrix (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structMatrix}{Matrix}} \texorpdfstring{$\ast$}{*}}]{mat,  }\item[{int}]{precision }\end{DoxyParamCaption})}
+
+
+
+Печатает матрицу с заданной точностью 
+
+Выводит матрицу в стандартный вывод с заданной точностью
+
+
+\begin{DoxyParams}{Аргументы}
+{\em mat} & Указатель на матрицу для печати \\
+\hline
+{\em precision} & Количество знаков после запятой\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Заметки}
+Если матрица не существует (NULL), выводит сообщение об ошибке 
+
+Формат вывода\+: элементы разделены пробелами, строки разделены переносами 
+\end{DoxyNote}
+\Hypertarget{output_8c_a0c58ba2fba5645f4da950dd3dd5fc091}\label{output_8c_a0c58ba2fba5645f4da950dd3dd5fc091} 
+\index{output.c@{output.c}!print\_matrix\_formatted@{print\_matrix\_formatted}}
+\index{print\_matrix\_formatted@{print\_matrix\_formatted}!output.c@{output.c}}
+\doxysubsubsection{\texorpdfstring{print\_matrix\_formatted()}{print\_matrix\_formatted()}}
+{\footnotesize\ttfamily void print\+\_\+matrix\+\_\+formatted (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structMatrix}{Matrix}} \texorpdfstring{$\ast$}{*}}]{mat,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{format }\end{DoxyParamCaption})}
+
+
+
+Печатает матрицу с пользовательским форматом 
+
+Выводит матрицу с пользовательским форматированием
+
+
+\begin{DoxyParams}{Аргументы}
+{\em mat} & Указатель на матрицу для печати \\
+\hline
+{\em format} & Строка формата printf для элементов матрицы\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Заметки}
+Пример формата\+: "{}\%8.\+2f "{} для выравнивания по 8 символам с 2 знаками после запятой 
+
+Проверяет валидность входных параметров 
+\end{DoxyNote}
+\Hypertarget{output_8c_a73c5dcbc28c64141cb484da29d30a2e1}\label{output_8c_a73c5dcbc28c64141cb484da29d30a2e1} 
+\index{output.c@{output.c}!save\_matrix\_to\_file@{save\_matrix\_to\_file}}
+\index{save\_matrix\_to\_file@{save\_matrix\_to\_file}!output.c@{output.c}}
+\doxysubsubsection{\texorpdfstring{save\_matrix\_to\_file()}{save\_matrix\_to\_file()}}
+{\footnotesize\ttfamily int save\+\_\+matrix\+\_\+to\+\_\+file (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structMatrix}{Matrix}} \texorpdfstring{$\ast$}{*}}]{mat,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{filename }\end{DoxyParamCaption})}
+
+
+
+Сохраняет матрицу в файл 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em mat} & Указатель на матрицу для сохранения \\
+\hline
+{\em filename} & Имя файла для сохранения \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+0 в случае успеха, -\/1 при ошибке
+\end{DoxyReturn}
+\begin{DoxyNote}{Заметки}
+Формат файла\+:
+\begin{DoxyItemize}
+\item Первая строка\+: количество строк и столбцов
+\item Последующие строки\+: элементы матрицы
+\item Элементы сохраняются с фиксированной точностью 6 знаков после запятой 
+\end{DoxyItemize}
+\end{DoxyNote}

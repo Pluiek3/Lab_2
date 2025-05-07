@@ -1,0 +1,163 @@
+\doxysection{Файл tests/tests\+\_\+output.c}
+\hypertarget{tests__output_8c}{}\label{tests__output_8c}\index{tests/tests\_output.c@{tests/tests\_output.c}}
+
+
+Тесты для функций вывода матриц  
+
+
+{\ttfamily \#include "{}tests\+\_\+output.\+h"{}}\newline
+Граф включаемых заголовочных файлов для tests\+\_\+output.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tests__output_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structMatrix}{Matrix}} \mbox{\hyperlink{tests__output_8c_a97b085df6b99241163f77214e67d10b8}{create\+\_\+test\+\_\+matrix}} (int rows, int cols)
+\begin{DoxyCompactList}\small\item\em Создает тестовую матрицу с предсказуемыми значениями \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tests__output_8c_a8e0662179fe08035d6af72d1524bda68}{test\+\_\+print\+\_\+matrix\+\_\+basic}} (void)
+\begin{DoxyCompactList}\small\item\em Тест базового вывода матрицы \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tests__output_8c_a6f312522d26eea6470fcc3524da0956c}{test\+\_\+print\+\_\+matrix\+\_\+edge\+\_\+cases}} (void)
+\begin{DoxyCompactList}\small\item\em Тест граничных случаев вывода \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tests__output_8c_a3e4593d189f2c06763bcbc109c6e8d12}{test\+\_\+save\+\_\+matrix\+\_\+to\+\_\+file\+\_\+normal}} (void)
+\begin{DoxyCompactList}\small\item\em Тест сохранения матрицы в файл (нормальный случай) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tests__output_8c_ab251d1ab10f00c7c7c988eb4da0c7c97}{test\+\_\+save\+\_\+matrix\+\_\+to\+\_\+file\+\_\+errors}} (void)
+\begin{DoxyCompactList}\small\item\em Тест обработки ошибок при сохранении \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tests__output_8c_af6a5a12bea4dcfdeeae84a64e1f95131}{test\+\_\+print\+\_\+matrix\+\_\+formatted}} (void)
+\begin{DoxyCompactList}\small\item\em Тест форматированного вывода матрицы \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tests__output_8c_acab1d0bf7fe66cd6742701b22f830aef}{register\+\_\+output\+\_\+operations\+\_\+tests}} ()
+\begin{DoxyCompactList}\small\item\em Регистрирует все тесты функций вывода \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Тесты для функций вывода матриц 
+
+
+
+\doxysubsection{Функции}
+\Hypertarget{tests__output_8c_a97b085df6b99241163f77214e67d10b8}\label{tests__output_8c_a97b085df6b99241163f77214e67d10b8} 
+\index{tests\_output.c@{tests\_output.c}!create\_test\_matrix@{create\_test\_matrix}}
+\index{create\_test\_matrix@{create\_test\_matrix}!tests\_output.c@{tests\_output.c}}
+\doxysubsubsection{\texorpdfstring{create\_test\_matrix()}{create\_test\_matrix()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structMatrix}{Matrix}} create\+\_\+test\+\_\+matrix (\begin{DoxyParamCaption}\item[{int}]{rows,  }\item[{int}]{cols }\end{DoxyParamCaption})}
+
+
+
+Создает тестовую матрицу с предсказуемыми значениями 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em rows} & Количество строк \\
+\hline
+{\em cols} & Количество столбцов \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Заполненная тестовая матрица
+\end{DoxyReturn}
+Значения элементов рассчитываются по формуле\+: (номер\+\_\+строки + 1)\texorpdfstring{$\ast$}{*}10 + (номер\+\_\+столбца + 1)\texorpdfstring{$\ast$}{*}0.1 Это позволяет легко проверять корректность вывода \Hypertarget{tests__output_8c_acab1d0bf7fe66cd6742701b22f830aef}\label{tests__output_8c_acab1d0bf7fe66cd6742701b22f830aef} 
+\index{tests\_output.c@{tests\_output.c}!register\_output\_operations\_tests@{register\_output\_operations\_tests}}
+\index{register\_output\_operations\_tests@{register\_output\_operations\_tests}!tests\_output.c@{tests\_output.c}}
+\doxysubsubsection{\texorpdfstring{register\_output\_operations\_tests()}{register\_output\_operations\_tests()}}
+{\footnotesize\ttfamily void register\+\_\+output\+\_\+operations\+\_\+tests (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Регистрирует все тесты функций вывода 
+
+Регистрирует все тесты для функций вывода матриц
+
+Регистрирует тесты, связанные с операциями вывода.
+
+Создает тестовый набор и добавляет тесты для\+:
+\begin{DoxyItemize}
+\item Базового вывода матрицы
+\item Граничных случаев
+\item Сохранения в файл
+\item Обработки ошибок
+\item Форматированного вывода 
+\end{DoxyItemize}\Hypertarget{tests__output_8c_a8e0662179fe08035d6af72d1524bda68}\label{tests__output_8c_a8e0662179fe08035d6af72d1524bda68} 
+\index{tests\_output.c@{tests\_output.c}!test\_print\_matrix\_basic@{test\_print\_matrix\_basic}}
+\index{test\_print\_matrix\_basic@{test\_print\_matrix\_basic}!tests\_output.c@{tests\_output.c}}
+\doxysubsubsection{\texorpdfstring{test\_print\_matrix\_basic()}{test\_print\_matrix\_basic()}}
+{\footnotesize\ttfamily void test\+\_\+print\+\_\+matrix\+\_\+basic (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Тест базового вывода матрицы 
+
+Проверяет\+:
+\begin{DoxyItemize}
+\item Корректность создания тестовой матрицы
+\item Отсутствие падения при выводе
+\item Сохранение структуры матрицы
+\end{DoxyItemize}
+
+\begin{DoxyNote}{Заметки}
+Проверка вывода в stdout затруднена, поэтому тестируется только отсутствие ошибок 
+\end{DoxyNote}
+\Hypertarget{tests__output_8c_a6f312522d26eea6470fcc3524da0956c}\label{tests__output_8c_a6f312522d26eea6470fcc3524da0956c} 
+\index{tests\_output.c@{tests\_output.c}!test\_print\_matrix\_edge\_cases@{test\_print\_matrix\_edge\_cases}}
+\index{test\_print\_matrix\_edge\_cases@{test\_print\_matrix\_edge\_cases}!tests\_output.c@{tests\_output.c}}
+\doxysubsubsection{\texorpdfstring{test\_print\_matrix\_edge\_cases()}{test\_print\_matrix\_edge\_cases()}}
+{\footnotesize\ttfamily void test\+\_\+print\+\_\+matrix\+\_\+edge\+\_\+cases (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Тест граничных случаев вывода 
+
+Проверяет обработку особых случаев\+:
+\begin{DoxyItemize}
+\item NULL матрица (должна выводить сообщение об ошибке)
+\item Пустая матрица (не должна вызывать ошибок) 
+\end{DoxyItemize}\Hypertarget{tests__output_8c_af6a5a12bea4dcfdeeae84a64e1f95131}\label{tests__output_8c_af6a5a12bea4dcfdeeae84a64e1f95131} 
+\index{tests\_output.c@{tests\_output.c}!test\_print\_matrix\_formatted@{test\_print\_matrix\_formatted}}
+\index{test\_print\_matrix\_formatted@{test\_print\_matrix\_formatted}!tests\_output.c@{tests\_output.c}}
+\doxysubsubsection{\texorpdfstring{test\_print\_matrix\_formatted()}{test\_print\_matrix\_formatted()}}
+{\footnotesize\ttfamily void test\+\_\+print\+\_\+matrix\+\_\+formatted (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Тест форматированного вывода матрицы 
+
+Проверяет\+:
+\begin{DoxyItemize}
+\item Поддержку различных форматов вывода
+\item Обработку специальных форматов (экспоненциальная запись)
+\item Отсутствие падения при выводе 
+\end{DoxyItemize}\Hypertarget{tests__output_8c_ab251d1ab10f00c7c7c988eb4da0c7c97}\label{tests__output_8c_ab251d1ab10f00c7c7c988eb4da0c7c97} 
+\index{tests\_output.c@{tests\_output.c}!test\_save\_matrix\_to\_file\_errors@{test\_save\_matrix\_to\_file\_errors}}
+\index{test\_save\_matrix\_to\_file\_errors@{test\_save\_matrix\_to\_file\_errors}!tests\_output.c@{tests\_output.c}}
+\doxysubsubsection{\texorpdfstring{test\_save\_matrix\_to\_file\_errors()}{test\_save\_matrix\_to\_file\_errors()}}
+{\footnotesize\ttfamily void test\+\_\+save\+\_\+matrix\+\_\+to\+\_\+file\+\_\+errors (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Тест обработки ошибок при сохранении 
+
+Проверяет\+:
+\begin{DoxyItemize}
+\item Обработку NULL параметров
+\item Попытку сохранения в несуществующую директорию
+\item Возвращаемые коды ошибок 
+\end{DoxyItemize}\Hypertarget{tests__output_8c_a3e4593d189f2c06763bcbc109c6e8d12}\label{tests__output_8c_a3e4593d189f2c06763bcbc109c6e8d12} 
+\index{tests\_output.c@{tests\_output.c}!test\_save\_matrix\_to\_file\_normal@{test\_save\_matrix\_to\_file\_normal}}
+\index{test\_save\_matrix\_to\_file\_normal@{test\_save\_matrix\_to\_file\_normal}!tests\_output.c@{tests\_output.c}}
+\doxysubsubsection{\texorpdfstring{test\_save\_matrix\_to\_file\_normal()}{test\_save\_matrix\_to\_file\_normal()}}
+{\footnotesize\ttfamily void test\+\_\+save\+\_\+matrix\+\_\+to\+\_\+file\+\_\+normal (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Тест сохранения матрицы в файл (нормальный случай) 
+
+Проверяет\+:
+\begin{DoxyItemize}
+\item Корректность сохранения размеров матрицы
+\item Точность сохранения значений
+\item Соответствие формата файла спецификации
+\item Очистку временных файлов 
+\end{DoxyItemize}

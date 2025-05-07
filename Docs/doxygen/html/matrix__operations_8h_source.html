@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Lab_2: Исходный файл src/matrix/matrix_operations.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Lab_2<span id="projectnumber">&#160;0.1</span>
+   </div>
+   <div id="projectbrief">Matrix operations</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_40d7732de2983c682bb99d86585a563c.html">matrix</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">matrix_operations.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="matrix__operations_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#ifndef MATRIX_OPERATIONS_H</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#define MATRIX_OPERATIONS_H</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;../include/config.h&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><a class="code hl_struct" href="structMatrix.html">Matrix</a> <a class="code hl_function" href="group__Matrix__Operations.html#ga00b3eed9347d1300084aa9b4b59faa14">create_matrix</a>(<span class="keywordtype">int</span> rows, <span class="keywordtype">int</span> cols);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keywordtype">void</span> <a class="code hl_function" href="group__Matrix__Operations.html#ga27f34b7baa60e9b95a0f662398fe0c31">free_matrix</a>(<a class="code hl_struct" href="structMatrix.html">Matrix</a> mat);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><a class="code hl_struct" href="structMatrix.html">Matrix</a> <a class="code hl_function" href="group__Matrix__Operations.html#ga733d363e0c4ebd683a2f46193473d8b7">load_matrix_from_file</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *filename);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><a class="code hl_struct" href="structMatrix.html">Matrix</a> <a class="code hl_function" href="group__Matrix__Operations.html#gaad297d9592344b473491a93bcb58d557">copy_matrix</a>(<a class="code hl_struct" href="structMatrix.html">Matrix</a> mat);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><a class="code hl_struct" href="structMatrix.html">Matrix</a> <a class="code hl_function" href="group__Matrix__Operations.html#ga78ba989ad7e0b1df81195a6d9847a6d5">plus_matrices</a>(<a class="code hl_struct" href="structMatrix.html">Matrix</a> mat1, <a class="code hl_struct" href="structMatrix.html">Matrix</a> mat2);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><a class="code hl_struct" href="structMatrix.html">Matrix</a> <a class="code hl_function" href="group__Matrix__Operations.html#ga2a536d3d18909f58751114066fb1267f">multiply_matrices</a>(<a class="code hl_struct" href="structMatrix.html">Matrix</a> mat1, <a class="code hl_struct" href="structMatrix.html">Matrix</a> mat2);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><a class="code hl_struct" href="structMatrix.html">Matrix</a> <a class="code hl_function" href="group__Matrix__Operations.html#ga461f32d9c175b99357e8d1a07c15aa81">transpose_matrix</a>(<a class="code hl_struct" href="structMatrix.html">Matrix</a> mat);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="keywordtype">double</span> <a class="code hl_function" href="group__Matrix__Operations.html#ga65a94ae380c65ff2601e2d473e2ae9ed">determinant</a>(<a class="code hl_struct" href="structMatrix.html">Matrix</a> mat);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><a class="code hl_struct" href="structMatrix.html">Matrix</a> <a class="code hl_function" href="group__Matrix__Operations.html#ga9d01c8de5e79be4b729b26665fc3b57c">subtract_matrices</a>(<a class="code hl_struct" href="structMatrix.html">Matrix</a> mat1, <a class="code hl_struct" href="structMatrix.html">Matrix</a> mat2);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="ttc" id="agroup__Matrix__Operations_html_ga00b3eed9347d1300084aa9b4b59faa14"><div class="ttname"><a href="group__Matrix__Operations.html#ga00b3eed9347d1300084aa9b4b59faa14">create_matrix</a></div><div class="ttdeci">Matrix create_matrix(int rows, int cols)</div><div class="ttdoc">Создает матрицу заданного размера</div><div class="ttdef"><b>Definition</b> matrix_operations.c:16</div></div>
+<div class="ttc" id="agroup__Matrix__Operations_html_ga27f34b7baa60e9b95a0f662398fe0c31"><div class="ttname"><a href="group__Matrix__Operations.html#ga27f34b7baa60e9b95a0f662398fe0c31">free_matrix</a></div><div class="ttdeci">void free_matrix(Matrix mat)</div><div class="ttdoc">Освобождает память, занятую матрицей</div><div class="ttdef"><b>Definition</b> matrix_operations.c:31</div></div>
+<div class="ttc" id="agroup__Matrix__Operations_html_ga2a536d3d18909f58751114066fb1267f"><div class="ttname"><a href="group__Matrix__Operations.html#ga2a536d3d18909f58751114066fb1267f">multiply_matrices</a></div><div class="ttdeci">Matrix multiply_matrices(Matrix mat1, Matrix mat2)</div><div class="ttdoc">Умножает две матрицы</div><div class="ttdef"><b>Definition</b> matrix_operations.c:119</div></div>
+<div class="ttc" id="agroup__Matrix__Operations_html_ga461f32d9c175b99357e8d1a07c15aa81"><div class="ttname"><a href="group__Matrix__Operations.html#ga461f32d9c175b99357e8d1a07c15aa81">transpose_matrix</a></div><div class="ttdeci">Matrix transpose_matrix(Matrix mat)</div><div class="ttdoc">Транспонирует матрицу</div><div class="ttdef"><b>Definition</b> matrix_operations.c:142</div></div>
+<div class="ttc" id="agroup__Matrix__Operations_html_ga65a94ae380c65ff2601e2d473e2ae9ed"><div class="ttname"><a href="group__Matrix__Operations.html#ga65a94ae380c65ff2601e2d473e2ae9ed">determinant</a></div><div class="ttdeci">double determinant(Matrix mat)</div><div class="ttdoc">Вычисляет определитель матрицы</div><div class="ttdef"><b>Definition</b> matrix_operations.c:158</div></div>
+<div class="ttc" id="agroup__Matrix__Operations_html_ga733d363e0c4ebd683a2f46193473d8b7"><div class="ttname"><a href="group__Matrix__Operations.html#ga733d363e0c4ebd683a2f46193473d8b7">load_matrix_from_file</a></div><div class="ttdeci">Matrix load_matrix_from_file(const char *filename)</div><div class="ttdoc">Загружает матрицу из файла</div><div class="ttdef"><b>Definition</b> matrix_operations.c:44</div></div>
+<div class="ttc" id="agroup__Matrix__Operations_html_ga78ba989ad7e0b1df81195a6d9847a6d5"><div class="ttname"><a href="group__Matrix__Operations.html#ga78ba989ad7e0b1df81195a6d9847a6d5">plus_matrices</a></div><div class="ttdeci">Matrix plus_matrices(Matrix mat1, Matrix mat2)</div><div class="ttdoc">Складывает две матрицы</div><div class="ttdef"><b>Definition</b> matrix_operations.c:97</div></div>
+<div class="ttc" id="agroup__Matrix__Operations_html_ga9d01c8de5e79be4b729b26665fc3b57c"><div class="ttname"><a href="group__Matrix__Operations.html#ga9d01c8de5e79be4b729b26665fc3b57c">subtract_matrices</a></div><div class="ttdeci">Matrix subtract_matrices(Matrix mat1, Matrix mat2)</div><div class="ttdoc">Вычитает две матрицы</div><div class="ttdef"><b>Definition</b> matrix_operations.c:198</div></div>
+<div class="ttc" id="agroup__Matrix__Operations_html_gaad297d9592344b473491a93bcb58d557"><div class="ttname"><a href="group__Matrix__Operations.html#gaad297d9592344b473491a93bcb58d557">copy_matrix</a></div><div class="ttdeci">Matrix copy_matrix(Matrix mat)</div><div class="ttdoc">Создает копию матрицы</div><div class="ttdef"><b>Definition</b> matrix_operations.c:80</div></div>
+<div class="ttc" id="astructMatrix_html"><div class="ttname"><a href="structMatrix.html">Matrix</a></div><div class="ttdoc">Структура, представляющая матрицу</div><div class="ttdef"><b>Definition</b> config.h:17</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

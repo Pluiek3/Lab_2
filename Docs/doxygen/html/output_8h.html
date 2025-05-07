@@ -1,0 +1,305 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Lab_2: Файл src/output/output.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Lab_2<span id="projectnumber">&#160;0.1</span>
+   </div>
+   <div id="projectbrief">Matrix operations</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_994de0fd01319e484ee1453a6afebed0.html">output</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">Файл output.h</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Заголовочный файл для функций вывода матриц  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="config_8h_source.html">../include/config.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для output.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="output_8h__incl.png" border="0" usemap="#asrc_2output_2output_8h" alt=""/></div>
+<map name="asrc_2output_2output_8h" id="asrc_2output_2output_8h">
+<area shape="rect" title="Заголовочный файл для функций вывода матриц" alt="" coords="59,5,205,31"/>
+<area shape="rect" title=" " alt="" coords="5,79,72,104"/>
+<area shape="poly" title=" " alt="" coords="119,33,66,72,63,68,115,29"/>
+<area shape="rect" title=" " alt="" coords="97,79,167,104"/>
+<area shape="poly" title=" " alt="" coords="135,31,135,65,129,65,129,31"/>
+<area shape="rect" href="config_8h.html" title="Заголовочный файл, определяющий структуру матрицы" alt="" coords="192,79,328,104"/>
+<area shape="poly" title=" " alt="" coords="154,28,228,69,226,74,151,33"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Граф файлов, в которые включается этот файл:</div>
+<div class="dyncontent">
+<div class="center"><img src="output_8h__dep__incl.png" border="0" usemap="#asrc_2output_2output_8hdep" alt=""/></div>
+<map name="asrc_2output_2output_8hdep" id="asrc_2output_2output_8hdep">
+<area shape="rect" title="Заголовочный файл для функций вывода матриц" alt="" coords="119,5,264,31"/>
+<area shape="rect" href="main_8c.html" title="Основная программа для выполнения матричных операций" alt="" coords="5,79,95,104"/>
+<area shape="poly" title=" " alt="" coords="158,39,74,81,72,76,155,34"/>
+<area shape="rect" href="output_8c.html" title="Реализация функций вывода матриц" alt="" coords="119,79,263,104"/>
+<area shape="poly" title=" " alt="" coords="194,44,194,79,189,79,189,44"/>
+<area shape="rect" href="tests__output_8h.html" title="Заголовочный файл для тестирования функций вывода матриц" alt="" coords="288,79,439,104"/>
+<area shape="poly" title=" " alt="" coords="232,33,336,76,334,81,230,38"/>
+<area shape="rect" href="tests__output_8c.html" title="Тесты для функций вывода матриц" alt="" coords="288,152,439,177"/>
+<area shape="poly" title=" " alt="" coords="366,118,366,152,361,152,361,118"/>
+</map>
+</div>
+</div>
+<p><a href="output_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:a42568bfefe87bc0e1dcf1e924da29b45" id="r_a42568bfefe87bc0e1dcf1e924da29b45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="output_8h.html#a42568bfefe87bc0e1dcf1e924da29b45">print_matrix</a> (const <a class="el" href="structMatrix.html">Matrix</a> *mat, int precision)</td></tr>
+<tr class="memdesc:a42568bfefe87bc0e1dcf1e924da29b45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выводит матрицу в стандартный вывод с заданной точностью  <br /></td></tr>
+<tr class="separator:a42568bfefe87bc0e1dcf1e924da29b45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73c5dcbc28c64141cb484da29d30a2e1" id="r_a73c5dcbc28c64141cb484da29d30a2e1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="output_8h.html#a73c5dcbc28c64141cb484da29d30a2e1">save_matrix_to_file</a> (const <a class="el" href="structMatrix.html">Matrix</a> *mat, const char *filename)</td></tr>
+<tr class="memdesc:a73c5dcbc28c64141cb484da29d30a2e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сохраняет матрицу в файл  <br /></td></tr>
+<tr class="separator:a73c5dcbc28c64141cb484da29d30a2e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c58ba2fba5645f4da950dd3dd5fc091" id="r_a0c58ba2fba5645f4da950dd3dd5fc091"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="output_8h.html#a0c58ba2fba5645f4da950dd3dd5fc091">print_matrix_formatted</a> (const <a class="el" href="structMatrix.html">Matrix</a> *mat, const char *format)</td></tr>
+<tr class="memdesc:a0c58ba2fba5645f4da950dd3dd5fc091"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выводит матрицу с пользовательским форматированием  <br /></td></tr>
+<tr class="separator:a0c58ba2fba5645f4da950dd3dd5fc091"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Заголовочный файл для функций вывода матриц </p>
+</div><h2 class="groupheader">Функции</h2>
+<a id="a42568bfefe87bc0e1dcf1e924da29b45" name="a42568bfefe87bc0e1dcf1e924da29b45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42568bfefe87bc0e1dcf1e924da29b45">&#9670;&#160;</a></span>print_matrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void print_matrix </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structMatrix.html">Matrix</a> *&#160;</td>
+          <td class="paramname"><em>mat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>precision</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выводит матрицу в стандартный вывод с заданной точностью </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat</td><td>Указатель на матрицу для вывода </td></tr>
+    <tr><td class="paramname">precision</td><td>Количество знаков после десятичной точки</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Заметки</dt><dd>Если mat == NULL, выводит сообщение об ошибке в stderr </dd>
+<dd>
+Формат вывода: элементы разделены пробелами, строки разделены переносами</dd></dl>
+<p>Выводит матрицу в стандартный вывод с заданной точностью</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat</td><td>Указатель на матрицу для печати </td></tr>
+    <tr><td class="paramname">precision</td><td>Количество знаков после запятой</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Заметки</dt><dd>Если матрица не существует (NULL), выводит сообщение об ошибке </dd>
+<dd>
+Формат вывода: элементы разделены пробелами, строки разделены переносами </dd></dl>
+
+</div>
+</div>
+<a id="a0c58ba2fba5645f4da950dd3dd5fc091" name="a0c58ba2fba5645f4da950dd3dd5fc091"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c58ba2fba5645f4da950dd3dd5fc091">&#9670;&#160;</a></span>print_matrix_formatted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void print_matrix_formatted </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structMatrix.html">Matrix</a> *&#160;</td>
+          <td class="paramname"><em>mat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>format</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выводит матрицу с пользовательским форматированием </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat</td><td>Указатель на матрицу для вывода </td></tr>
+    <tr><td class="paramname">format</td><td>Строка формата printf для элементов</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Заметки</dt><dd>Примеры форматов:<ul>
+<li>"%8.3f " - выравнивание по 8 символам, 3 знака после точки</li>
+<li>"%+.2e " - экспоненциальная запись со знаком </li>
+</ul>
+</dd></dl>
+<dl class="section warning"><dt>Предупреждения</dt><dd>Не проверяет валидность строки формата</dd></dl>
+<p>Выводит матрицу с пользовательским форматированием</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat</td><td>Указатель на матрицу для печати </td></tr>
+    <tr><td class="paramname">format</td><td>Строка формата printf для элементов матрицы</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Заметки</dt><dd>Пример формата: "%8.2f " для выравнивания по 8 символам с 2 знаками после запятой </dd>
+<dd>
+Проверяет валидность входных параметров </dd></dl>
+
+</div>
+</div>
+<a id="a73c5dcbc28c64141cb484da29d30a2e1" name="a73c5dcbc28c64141cb484da29d30a2e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73c5dcbc28c64141cb484da29d30a2e1">&#9670;&#160;</a></span>save_matrix_to_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int save_matrix_to_file </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structMatrix.html">Matrix</a> *&#160;</td>
+          <td class="paramname"><em>mat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Сохраняет матрицу в файл </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat</td><td>Указатель на матрицу для сохранения </td></tr>
+    <tr><td class="paramname">filename</td><td>Имя файла для сохранения </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>0 при успешном сохранении, -1 при ошибке</dd></dl>
+<dl class="section note"><dt>Заметки</dt><dd>Формат файла:<ul>
+<li>Первая строка: количество строк и столбцов</li>
+<li>Последующие строки: элементы матрицы </li>
+</ul>
+</dd></dl>
+<dl class="section warning"><dt>Предупреждения</dt><dd>При ошибке открытия файла возвращает -1 и выводит сообщение в stderr</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat</td><td>Указатель на матрицу для сохранения </td></tr>
+    <tr><td class="paramname">filename</td><td>Имя файла для сохранения </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>0 в случае успеха, -1 при ошибке</dd></dl>
+<dl class="section note"><dt>Заметки</dt><dd>Формат файла:<ul>
+<li>Первая строка: количество строк и столбцов</li>
+<li>Последующие строки: элементы матрицы</li>
+<li>Элементы сохраняются с фиксированной точностью 6 знаков после запятой </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

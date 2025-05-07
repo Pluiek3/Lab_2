@@ -1,0 +1,71 @@
+\doxysection{Файл tests/tests\+\_\+matrix.h}
+\hypertarget{tests__matrix_8h}{}\label{tests__matrix_8h}\index{tests/tests\_matrix.h@{tests/tests\_matrix.h}}
+
+
+Заголовочный файл для тестов операций с матрицами  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$CUnit/\+CUnit.\+h$>$}\newline
+{\ttfamily \#include $<$CUnit/\+Basic.\+h$>$}\newline
+{\ttfamily \#include "{}../src/matrix/matrix\+\_\+operations.\+h"{}}\newline
+Граф включаемых заголовочных файлов для tests\+\_\+matrix.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tests__matrix_8h__incl}
+\end{center}
+\end{figure}
+Граф файлов, в которые включается этот файл\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{tests__matrix_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{tests__matrix_8h_a2beed4d7e5a22ed46c98153e5785f19e}{register\+\_\+matrix\+\_\+operations\+\_\+tests}} (void)
+\begin{DoxyCompactList}\small\item\em Регистрирует все тестовые случаи для операций с матрицами \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Заголовочный файл для тестов операций с матрицами 
+
+
+
+\doxysubsection{Функции}
+\Hypertarget{tests__matrix_8h_a2beed4d7e5a22ed46c98153e5785f19e}\label{tests__matrix_8h_a2beed4d7e5a22ed46c98153e5785f19e} 
+\index{tests\_matrix.h@{tests\_matrix.h}!register\_matrix\_operations\_tests@{register\_matrix\_operations\_tests}}
+\index{register\_matrix\_operations\_tests@{register\_matrix\_operations\_tests}!tests\_matrix.h@{tests\_matrix.h}}
+\doxysubsubsection{\texorpdfstring{register\_matrix\_operations\_tests()}{register\_matrix\_operations\_tests()}}
+{\footnotesize\ttfamily void register\+\_\+matrix\+\_\+operations\+\_\+tests (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Регистрирует все тестовые случаи для операций с матрицами 
+
+Данная функция создает тестовый набор для операций с матрицами и добавляет в него все индивидуальные тестовые случаи. Тесты включают\+:
+\begin{DoxyItemize}
+\item Создание матриц и управление памятью
+\item Операции ввода/вывода с файлами
+\item Базовые арифметические операции
+\item Свойства матриц и преобразования
+\item Особые случаи и граничные условия
+\end{DoxyItemize}
+
+\begin{DoxyNote}{Заметки}
+Эту функцию необходимо вызывать перед запуском любых тестов матриц 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{См. также}
+\doxylink{matrix__operations_8h}{matrix\+\_\+operations.\+h}
+\end{DoxySeeAlso}
+Регистрирует все тестовые случаи для операций с матрицами
+
+Регистрирует тесты, связанные с операциями над матрицами.
+
+Создает тестовый набор и добавляет все тестовые случаи для проверки матричных операций. 

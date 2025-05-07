@@ -1,0 +1,182 @@
+\doxysection{Файл tests/tests\+\_\+matrix.c}
+\hypertarget{tests__matrix_8c}{}\label{tests__matrix_8c}\index{tests/tests\_matrix.c@{tests/tests\_matrix.c}}
+
+
+Тесты для операций с матрицами  
+
+
+{\ttfamily \#include "{}tests\+\_\+matrix.\+h"{}}\newline
+Граф включаемых заголовочных файлов для tests\+\_\+matrix.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tests__matrix_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{tests__matrix_8c_ad30601f714d50f56c5419d58ea912582}{test\+\_\+create\+\_\+and\+\_\+free\+\_\+matrix}} (void)
+\begin{DoxyCompactList}\small\item\em Тест создания и освобождения матрицы \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tests__matrix_8c_a7f2091904e01232039bb39e9a33b75dc}{test\+\_\+load\+\_\+matrix\+\_\+from\+\_\+file}} (void)
+\begin{DoxyCompactList}\small\item\em Тест загрузки матрицы из файла \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tests__matrix_8c_a5f79d0ea430e0801787a0f70a2d09634}{test\+\_\+copy\+\_\+matrix}} (void)
+\begin{DoxyCompactList}\small\item\em Тест копирования матрицы \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tests__matrix_8c_a1cdab1918e3a0b02664d5f1c2b814081}{test\+\_\+add\+\_\+matrices}} (void)
+\begin{DoxyCompactList}\small\item\em Тест сложения матриц \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tests__matrix_8c_a278fe5a3d73576909b7df698c0c27024}{test\+\_\+multiply\+\_\+matrices}} (void)
+\begin{DoxyCompactList}\small\item\em Тест умножения матриц \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tests__matrix_8c_a6543079178737155d3b78252634eb28d}{test\+\_\+transpose\+\_\+matrix}} (void)
+\begin{DoxyCompactList}\small\item\em Тест транспонирования матрицы \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tests__matrix_8c_afd38f679d8b732bde27c0993d5d1ec38}{test\+\_\+determinant}} (void)
+\begin{DoxyCompactList}\small\item\em Тест вычисления определителя \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tests__matrix_8c_ae0f9be6e2094ac3b6cd8f0abe861727e}{test\+\_\+subtract\+\_\+matrices}} (void)
+\begin{DoxyCompactList}\small\item\em Тест вычитания матриц \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tests__matrix_8c_afc1d34575d2e7485847eae1b7c5ecf2f}{register\+\_\+matrix\+\_\+operations\+\_\+tests}} ()
+\begin{DoxyCompactList}\small\item\em Регистрирует все тесты матричных операций \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Тесты для операций с матрицами 
+
+
+
+\doxysubsection{Функции}
+\Hypertarget{tests__matrix_8c_afc1d34575d2e7485847eae1b7c5ecf2f}\label{tests__matrix_8c_afc1d34575d2e7485847eae1b7c5ecf2f} 
+\index{tests\_matrix.c@{tests\_matrix.c}!register\_matrix\_operations\_tests@{register\_matrix\_operations\_tests}}
+\index{register\_matrix\_operations\_tests@{register\_matrix\_operations\_tests}!tests\_matrix.c@{tests\_matrix.c}}
+\doxysubsubsection{\texorpdfstring{register\_matrix\_operations\_tests()}{register\_matrix\_operations\_tests()}}
+{\footnotesize\ttfamily void register\+\_\+matrix\+\_\+operations\+\_\+tests (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Регистрирует все тесты матричных операций 
+
+Регистрирует все тестовые случаи для операций с матрицами
+
+Регистрирует тесты, связанные с операциями над матрицами.
+
+Создает тестовый набор и добавляет все тестовые случаи для проверки матричных операций. \Hypertarget{tests__matrix_8c_a1cdab1918e3a0b02664d5f1c2b814081}\label{tests__matrix_8c_a1cdab1918e3a0b02664d5f1c2b814081} 
+\index{tests\_matrix.c@{tests\_matrix.c}!test\_add\_matrices@{test\_add\_matrices}}
+\index{test\_add\_matrices@{test\_add\_matrices}!tests\_matrix.c@{tests\_matrix.c}}
+\doxysubsubsection{\texorpdfstring{test\_add\_matrices()}{test\_add\_matrices()}}
+{\footnotesize\ttfamily void test\+\_\+add\+\_\+matrices (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Тест сложения матриц 
+
+Проверяет\+:
+\begin{DoxyItemize}
+\item Корректность поэлементного сложения
+\item Обработку матриц одинакового размера
+\item Точность вычислений с плавающей точкой 
+\end{DoxyItemize}\Hypertarget{tests__matrix_8c_a5f79d0ea430e0801787a0f70a2d09634}\label{tests__matrix_8c_a5f79d0ea430e0801787a0f70a2d09634} 
+\index{tests\_matrix.c@{tests\_matrix.c}!test\_copy\_matrix@{test\_copy\_matrix}}
+\index{test\_copy\_matrix@{test\_copy\_matrix}!tests\_matrix.c@{tests\_matrix.c}}
+\doxysubsubsection{\texorpdfstring{test\_copy\_matrix()}{test\_copy\_matrix()}}
+{\footnotesize\ttfamily void test\+\_\+copy\+\_\+matrix (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Тест копирования матрицы 
+
+Проверяет\+:
+\begin{DoxyItemize}
+\item Создание точной копии матрицы
+\item Сохранение всех значений
+\item Независимость копии от оригинала (глубокое копирование) 
+\end{DoxyItemize}\Hypertarget{tests__matrix_8c_ad30601f714d50f56c5419d58ea912582}\label{tests__matrix_8c_ad30601f714d50f56c5419d58ea912582} 
+\index{tests\_matrix.c@{tests\_matrix.c}!test\_create\_and\_free\_matrix@{test\_create\_and\_free\_matrix}}
+\index{test\_create\_and\_free\_matrix@{test\_create\_and\_free\_matrix}!tests\_matrix.c@{tests\_matrix.c}}
+\doxysubsubsection{\texorpdfstring{test\_create\_and\_free\_matrix()}{test\_create\_and\_free\_matrix()}}
+{\footnotesize\ttfamily void test\+\_\+create\+\_\+and\+\_\+free\+\_\+matrix (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Тест создания и освобождения матрицы 
+
+Проверяет корректность создания матрицы\+:
+\begin{DoxyItemize}
+\item Правильность установки размеров
+\item Выделение памяти
+\item Возможность записи и чтения значений
+\item Корректность освобождения памяти 
+\end{DoxyItemize}\Hypertarget{tests__matrix_8c_afd38f679d8b732bde27c0993d5d1ec38}\label{tests__matrix_8c_afd38f679d8b732bde27c0993d5d1ec38} 
+\index{tests\_matrix.c@{tests\_matrix.c}!test\_determinant@{test\_determinant}}
+\index{test\_determinant@{test\_determinant}!tests\_matrix.c@{tests\_matrix.c}}
+\doxysubsubsection{\texorpdfstring{test\_determinant()}{test\_determinant()}}
+{\footnotesize\ttfamily void test\+\_\+determinant (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Тест вычисления определителя 
+
+Проверяет\+:
+\begin{DoxyItemize}
+\item Расчет определителя для матрицы 2x2
+\item Расчет определителя для матрицы 3x3
+\item Точность вычислений с плавающей точкой 
+\end{DoxyItemize}\Hypertarget{tests__matrix_8c_a7f2091904e01232039bb39e9a33b75dc}\label{tests__matrix_8c_a7f2091904e01232039bb39e9a33b75dc} 
+\index{tests\_matrix.c@{tests\_matrix.c}!test\_load\_matrix\_from\_file@{test\_load\_matrix\_from\_file}}
+\index{test\_load\_matrix\_from\_file@{test\_load\_matrix\_from\_file}!tests\_matrix.c@{tests\_matrix.c}}
+\doxysubsubsection{\texorpdfstring{test\_load\_matrix\_from\_file()}{test\_load\_matrix\_from\_file()}}
+{\footnotesize\ttfamily void test\+\_\+load\+\_\+matrix\+\_\+from\+\_\+file (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Тест загрузки матрицы из файла 
+
+Проверяет\+:
+\begin{DoxyItemize}
+\item Создание тестового файла с матрицей
+\item Корректность загрузки размеров
+\item Точность загрузки значений
+\item Очистку временных файлов 
+\end{DoxyItemize}\Hypertarget{tests__matrix_8c_a278fe5a3d73576909b7df698c0c27024}\label{tests__matrix_8c_a278fe5a3d73576909b7df698c0c27024} 
+\index{tests\_matrix.c@{tests\_matrix.c}!test\_multiply\_matrices@{test\_multiply\_matrices}}
+\index{test\_multiply\_matrices@{test\_multiply\_matrices}!tests\_matrix.c@{tests\_matrix.c}}
+\doxysubsubsection{\texorpdfstring{test\_multiply\_matrices()}{test\_multiply\_matrices()}}
+{\footnotesize\ttfamily void test\+\_\+multiply\+\_\+matrices (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Тест умножения матриц 
+
+Проверяет\+:
+\begin{DoxyItemize}
+\item Корректность умножения матриц совместимых размеров
+\item Правильность вычисления элементов результирующей матрицы
+\item Точность вычислений с плавающей точкой 
+\end{DoxyItemize}\Hypertarget{tests__matrix_8c_ae0f9be6e2094ac3b6cd8f0abe861727e}\label{tests__matrix_8c_ae0f9be6e2094ac3b6cd8f0abe861727e} 
+\index{tests\_matrix.c@{tests\_matrix.c}!test\_subtract\_matrices@{test\_subtract\_matrices}}
+\index{test\_subtract\_matrices@{test\_subtract\_matrices}!tests\_matrix.c@{tests\_matrix.c}}
+\doxysubsubsection{\texorpdfstring{test\_subtract\_matrices()}{test\_subtract\_matrices()}}
+{\footnotesize\ttfamily void test\+\_\+subtract\+\_\+matrices (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Тест вычитания матриц 
+
+Проверяет\+:
+\begin{DoxyItemize}
+\item Корректность поэлементного вычитания
+\item Обработку матриц одинакового размера
+\item Точность вычислений с плавающей точкой 
+\end{DoxyItemize}\Hypertarget{tests__matrix_8c_a6543079178737155d3b78252634eb28d}\label{tests__matrix_8c_a6543079178737155d3b78252634eb28d} 
+\index{tests\_matrix.c@{tests\_matrix.c}!test\_transpose\_matrix@{test\_transpose\_matrix}}
+\index{test\_transpose\_matrix@{test\_transpose\_matrix}!tests\_matrix.c@{tests\_matrix.c}}
+\doxysubsubsection{\texorpdfstring{test\_transpose\_matrix()}{test\_transpose\_matrix()}}
+{\footnotesize\ttfamily void test\+\_\+transpose\+\_\+matrix (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Тест транспонирования матрицы 
+
+Проверяет\+:
+\begin{DoxyItemize}
+\item Правильность изменения размеров
+\item Корректность перестановки элементов
+\item Сохранение значений при транспонировании 
+\end{DoxyItemize}

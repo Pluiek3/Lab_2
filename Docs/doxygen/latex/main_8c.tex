@@ -1,0 +1,55 @@
+\doxysection{Файл src/main.c}
+\hypertarget{main_8c}{}\label{main_8c}\index{src/main.c@{src/main.c}}
+
+
+Основная программа для выполнения матричных операций  
+
+
+{\ttfamily \#include "{}matrix/matrix\+\_\+operations.\+h"{}}\newline
+{\ttfamily \#include "{}output/output.\+h"{}}\newline
+Граф включаемых заголовочных файлов для main.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Точка входа в программу \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Основная программа для выполнения матричных операций 
+
+
+
+\doxysubsection{Функции}
+\Hypertarget{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+\index{main.c@{main.c}!main@{main}}
+\index{main@{main}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Точка входа в программу 
+
+\begin{DoxyReturn}{Возвращает}
+0 при успешном выполнении, EXIT\+\_\+\+FAILURE при ошибке
+\end{DoxyReturn}
+\begin{DoxyNote}{Заметки}
+Матрицы загружаются из файлов в папке data/ 
+
+Формат файлов матриц\+:
+\begin{DoxyItemize}
+\item Первые два числа -\/ размеры матрицы (строки, столбцы)
+\item Последующие числа -\/ элементы матрицы построчно
+\end{DoxyItemize}
+\end{DoxyNote}
+\begin{DoxyWarning}{Предупреждения}
+Проверяет совместимость размеров матриц перед операциями 
+\end{DoxyWarning}

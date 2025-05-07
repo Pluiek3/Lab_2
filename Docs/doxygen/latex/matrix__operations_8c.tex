@@ -1,0 +1,42 @@
+\doxysection{Файл src/matrix/matrix\+\_\+operations.c}
+\hypertarget{matrix__operations_8c}{}\label{matrix__operations_8c}\index{src/matrix/matrix\_operations.c@{src/matrix/matrix\_operations.c}}
+
+
+Файл для операций с матрицами  
+
+
+{\ttfamily \#include "{}matrix\+\_\+operations.\+h"{}}\newline
+Граф включаемых заголовочных файлов для matrix\+\_\+operations.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{matrix__operations_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structMatrix}{Matrix}} \mbox{\hyperlink{group__Matrix__Operations_ga00b3eed9347d1300084aa9b4b59faa14}{create\+\_\+matrix}} (int rows, int cols)
+\begin{DoxyCompactList}\small\item\em Создает матрицу заданного размера \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__Matrix__Operations_ga27f34b7baa60e9b95a0f662398fe0c31}{free\+\_\+matrix}} (\mbox{\hyperlink{structMatrix}{Matrix}} mat)
+\begin{DoxyCompactList}\small\item\em Освобождает память, занятую матрицей \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structMatrix}{Matrix}} \mbox{\hyperlink{group__Matrix__Operations_ga733d363e0c4ebd683a2f46193473d8b7}{load\+\_\+matrix\+\_\+from\+\_\+file}} (const char \texorpdfstring{$\ast$}{*}filename)
+\begin{DoxyCompactList}\small\item\em Загружает матрицу из файла \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structMatrix}{Matrix}} \mbox{\hyperlink{group__Matrix__Operations_gaad297d9592344b473491a93bcb58d557}{copy\+\_\+matrix}} (\mbox{\hyperlink{structMatrix}{Matrix}} mat)
+\begin{DoxyCompactList}\small\item\em Создает копию матрицы \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structMatrix}{Matrix}} \mbox{\hyperlink{group__Matrix__Operations_ga78ba989ad7e0b1df81195a6d9847a6d5}{plus\+\_\+matrices}} (\mbox{\hyperlink{structMatrix}{Matrix}} mat1, \mbox{\hyperlink{structMatrix}{Matrix}} mat2)
+\begin{DoxyCompactList}\small\item\em Складывает две матрицы \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structMatrix}{Matrix}} \mbox{\hyperlink{group__Matrix__Operations_ga2a536d3d18909f58751114066fb1267f}{multiply\+\_\+matrices}} (\mbox{\hyperlink{structMatrix}{Matrix}} mat1, \mbox{\hyperlink{structMatrix}{Matrix}} mat2)
+\begin{DoxyCompactList}\small\item\em Умножает две матрицы \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structMatrix}{Matrix}} \mbox{\hyperlink{group__Matrix__Operations_ga461f32d9c175b99357e8d1a07c15aa81}{transpose\+\_\+matrix}} (\mbox{\hyperlink{structMatrix}{Matrix}} mat)
+\begin{DoxyCompactList}\small\item\em Транспонирует матрицу \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{group__Matrix__Operations_ga65a94ae380c65ff2601e2d473e2ae9ed}{determinant}} (\mbox{\hyperlink{structMatrix}{Matrix}} mat)
+\begin{DoxyCompactList}\small\item\em Вычисляет определитель матрицы \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structMatrix}{Matrix}} \mbox{\hyperlink{group__Matrix__Operations_ga9d01c8de5e79be4b729b26665fc3b57c}{subtract\+\_\+matrices}} (\mbox{\hyperlink{structMatrix}{Matrix}} mat1, \mbox{\hyperlink{structMatrix}{Matrix}} mat2)
+\begin{DoxyCompactList}\small\item\em Вычитает две матрицы \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Файл для операций с матрицами 
+

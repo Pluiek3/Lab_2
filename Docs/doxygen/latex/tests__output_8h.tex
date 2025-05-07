@@ -1,0 +1,89 @@
+\doxysection{Файл tests/tests\+\_\+output.h}
+\hypertarget{tests__output_8h}{}\label{tests__output_8h}\index{tests/tests\_output.h@{tests/tests\_output.h}}
+
+
+Заголовочный файл для тестирования функций вывода матриц  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$sys/stat.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$CUnit/\+CUnit.\+h$>$}\newline
+{\ttfamily \#include $<$CUnit/\+Basic.\+h$>$}\newline
+{\ttfamily \#include "{}../src/include/config.\+h"{}}\newline
+{\ttfamily \#include "{}../src/matrix/matrix\+\_\+operations.\+h"{}}\newline
+{\ttfamily \#include "{}../src/output/output.\+h"{}}\newline
+Граф включаемых заголовочных файлов для tests\+\_\+output.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tests__output_8h__incl}
+\end{center}
+\end{figure}
+Граф файлов, в которые включается этот файл\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{tests__output_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{tests__output_8h_a01815d0e4e2698a3c7f2c21e5c2a8bac}{register\+\_\+output\+\_\+operations\+\_\+tests}} (void)
+\begin{DoxyCompactList}\small\item\em Регистрирует все тесты для функций вывода матриц \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Заголовочный файл для тестирования функций вывода матриц 
+
+Содержит объявления функций для тестирования\+:
+\begin{DoxyItemize}
+\item Базового вывода матриц
+\item Форматированного вывода
+\item Сохранения матриц в файлы
+\item Обработки граничных случаев 
+\end{DoxyItemize}
+
+\doxysubsection{Функции}
+\Hypertarget{tests__output_8h_a01815d0e4e2698a3c7f2c21e5c2a8bac}\label{tests__output_8h_a01815d0e4e2698a3c7f2c21e5c2a8bac} 
+\index{tests\_output.h@{tests\_output.h}!register\_output\_operations\_tests@{register\_output\_operations\_tests}}
+\index{register\_output\_operations\_tests@{register\_output\_operations\_tests}!tests\_output.h@{tests\_output.h}}
+\doxysubsubsection{\texorpdfstring{register\_output\_operations\_tests()}{register\_output\_operations\_tests()}}
+{\footnotesize\ttfamily void register\+\_\+output\+\_\+operations\+\_\+tests (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Регистрирует все тесты для функций вывода матриц 
+
+Создает тестовый набор и добавляет следующие тестовые случаи\+:
+\begin{DoxyItemize}
+\item test\+\_\+print\+\_\+matrix\+\_\+basic\+: Тестирование базового вывода матрицы
+\item test\+\_\+print\+\_\+matrix\+\_\+edge\+\_\+cases\+: Тестирование граничных случаев
+\item test\+\_\+save\+\_\+matrix\+\_\+to\+\_\+file\+\_\+normal\+: Тестирование сохранения в файл
+\item test\+\_\+save\+\_\+matrix\+\_\+to\+\_\+file\+\_\+errors\+: Тестирование обработки ошибок
+\item test\+\_\+print\+\_\+matrix\+\_\+formatted\+: Тестирование форматированного вывода
+\end{DoxyItemize}
+
+\begin{DoxyNote}{Заметки}
+Должен вызываться перед запуском тестов CU\+\_\+\+Basic\+Run() 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{См. также}
+\doxylink{output_8h}{output.\+h}
+\end{DoxySeeAlso}
+Регистрирует все тесты для функций вывода матриц
+
+Регистрирует тесты, связанные с операциями вывода.
+
+Создает тестовый набор и добавляет тесты для\+:
+\begin{DoxyItemize}
+\item Базового вывода матрицы
+\item Граничных случаев
+\item Сохранения в файл
+\item Обработки ошибок
+\item Форматированного вывода 
+\end{DoxyItemize}

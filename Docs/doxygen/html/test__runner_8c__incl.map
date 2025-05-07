@@ -1,0 +1,7 @@
+<map id="tests/test_runner.c" name="tests/test_runner.c">
+<area shape="rect" id="Node000001" title="Запуск тестов" alt="" coords="56,5,199,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,116,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,33,83,70,79,67,114,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="141,79,250,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="140,29,177,67,173,70,137,33"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="src/output/output.c" name="src/output/output.c">
+<area shape="rect" id="Node000001" title="Реализация функций вывода матриц" alt="" coords="92,5,236,31"/>
+<area shape="rect" id="Node000002" href="$output_8h.html" title="Заголовочный файл для функций вывода матриц" alt="" coords="126,79,202,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,31,167,65,161,65,161,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,152,72,177"/>
+<area shape="poly" id="edge5_Node000001_Node000003" title=" " alt="" coords="156,33,60,143,56,140,152,29"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="257,152,327,177"/>
+<area shape="poly" id="edge6_Node000001_Node000004" title=" " alt="" coords="176,29,275,140,271,143,172,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="145,106,72,147,70,143,143,102"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="186,102,260,143,258,147,183,106"/>
+<area shape="rect" id="Node000005" href="$config_8h.html" title="Заголовочный файл, определяющий структуру матрицы" alt="" coords="96,152,232,177"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="167,104,167,138,161,138,161,104"/>
+</map>

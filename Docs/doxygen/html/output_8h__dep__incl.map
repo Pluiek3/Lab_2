@@ -1,0 +1,11 @@
+<map id="src/output/output.h" name="src/output/output.h">
+<area shape="rect" id="Node000001" title="Заголовочный файл для функций вывода матриц" alt="" coords="119,5,264,31"/>
+<area shape="rect" id="Node000002" href="$main_8c.html" title="Основная программа для выполнения матричных операций" alt="" coords="5,79,95,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="158,39,74,81,72,76,155,34"/>
+<area shape="rect" id="Node000003" href="$output_8c.html" title="Реализация функций вывода матриц" alt="" coords="119,79,263,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="194,44,194,79,189,79,189,44"/>
+<area shape="rect" id="Node000004" href="$tests__output_8h.html" title="Заголовочный файл для тестирования функций вывода матриц" alt="" coords="288,79,439,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="232,33,336,76,334,81,230,38"/>
+<area shape="rect" id="Node000005" href="$tests__output_8c.html" title="Тесты для функций вывода матриц" alt="" coords="288,152,439,177"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="366,118,366,152,361,152,361,118"/>
+</map>

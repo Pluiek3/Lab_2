@@ -1,0 +1,318 @@
+\doxysection{Matrix\+\_\+\+Operations}
+\hypertarget{group__Matrix__Operations}{}\label{group__Matrix__Operations}\index{Matrix\_Operations@{Matrix\_Operations}}
+\doxysubsubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structMatrix}{Matrix}} \mbox{\hyperlink{group__Matrix__Operations_ga00b3eed9347d1300084aa9b4b59faa14}{create\+\_\+matrix}} (int rows, int cols)
+\begin{DoxyCompactList}\small\item\em Создает матрицу заданного размера \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__Matrix__Operations_ga27f34b7baa60e9b95a0f662398fe0c31}{free\+\_\+matrix}} (\mbox{\hyperlink{structMatrix}{Matrix}} mat)
+\begin{DoxyCompactList}\small\item\em Освобождает память, занятую матрицей \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structMatrix}{Matrix}} \mbox{\hyperlink{group__Matrix__Operations_ga733d363e0c4ebd683a2f46193473d8b7}{load\+\_\+matrix\+\_\+from\+\_\+file}} (const char \texorpdfstring{$\ast$}{*}filename)
+\begin{DoxyCompactList}\small\item\em Загружает матрицу из файла \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structMatrix}{Matrix}} \mbox{\hyperlink{group__Matrix__Operations_gaad297d9592344b473491a93bcb58d557}{copy\+\_\+matrix}} (\mbox{\hyperlink{structMatrix}{Matrix}} mat)
+\begin{DoxyCompactList}\small\item\em Создает копию матрицы \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structMatrix}{Matrix}} \mbox{\hyperlink{group__Matrix__Operations_ga78ba989ad7e0b1df81195a6d9847a6d5}{plus\+\_\+matrices}} (\mbox{\hyperlink{structMatrix}{Matrix}} mat1, \mbox{\hyperlink{structMatrix}{Matrix}} mat2)
+\begin{DoxyCompactList}\small\item\em Складывает две матрицы \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structMatrix}{Matrix}} \mbox{\hyperlink{group__Matrix__Operations_ga2a536d3d18909f58751114066fb1267f}{multiply\+\_\+matrices}} (\mbox{\hyperlink{structMatrix}{Matrix}} mat1, \mbox{\hyperlink{structMatrix}{Matrix}} mat2)
+\begin{DoxyCompactList}\small\item\em Умножает две матрицы \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structMatrix}{Matrix}} \mbox{\hyperlink{group__Matrix__Operations_ga461f32d9c175b99357e8d1a07c15aa81}{transpose\+\_\+matrix}} (\mbox{\hyperlink{structMatrix}{Matrix}} mat)
+\begin{DoxyCompactList}\small\item\em Транспонирует матрицу \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{group__Matrix__Operations_ga65a94ae380c65ff2601e2d473e2ae9ed}{determinant}} (\mbox{\hyperlink{structMatrix}{Matrix}} mat)
+\begin{DoxyCompactList}\small\item\em Вычисляет определитель матрицы \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structMatrix}{Matrix}} \mbox{\hyperlink{group__Matrix__Operations_ga9d01c8de5e79be4b729b26665fc3b57c}{subtract\+\_\+matrices}} (\mbox{\hyperlink{structMatrix}{Matrix}} mat1, \mbox{\hyperlink{structMatrix}{Matrix}} mat2)
+\begin{DoxyCompactList}\small\item\em Вычитает две матрицы \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+
+
+\doxysubsection{Функции}
+\Hypertarget{group__Matrix__Operations_gaad297d9592344b473491a93bcb58d557}\label{group__Matrix__Operations_gaad297d9592344b473491a93bcb58d557} 
+\index{Matrix\_Operations@{Matrix\_Operations}!copy\_matrix@{copy\_matrix}}
+\index{copy\_matrix@{copy\_matrix}!Matrix\_Operations@{Matrix\_Operations}}
+\doxysubsubsection{\texorpdfstring{copy\_matrix()}{copy\_matrix()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structMatrix}{Matrix}} copy\+\_\+matrix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structMatrix}{Matrix}}}]{mat }\end{DoxyParamCaption})}
+
+
+
+Создает копию матрицы 
+
+Создает глубокую копию матрицы
+
+
+\begin{DoxyParams}{Аргументы}
+{\em mat} & Исходная матрица \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Копия матрицы
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Аргументы}
+{\em mat} & Исходная матрица \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Независимая копия матрицы 
+\end{DoxyReturn}
+\Hypertarget{group__Matrix__Operations_ga00b3eed9347d1300084aa9b4b59faa14}\label{group__Matrix__Operations_ga00b3eed9347d1300084aa9b4b59faa14} 
+\index{Matrix\_Operations@{Matrix\_Operations}!create\_matrix@{create\_matrix}}
+\index{create\_matrix@{create\_matrix}!Matrix\_Operations@{Matrix\_Operations}}
+\doxysubsubsection{\texorpdfstring{create\_matrix()}{create\_matrix()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structMatrix}{Matrix}} create\+\_\+matrix (\begin{DoxyParamCaption}\item[{int}]{rows,  }\item[{int}]{cols }\end{DoxyParamCaption})}
+
+
+
+Создает матрицу заданного размера 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em rows} & Количество строк \\
+\hline
+{\em cols} & Количество столбцов \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Созданная матрица
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Аргументы}
+{\em rows} & Количество строк \\
+\hline
+{\em cols} & Количество столбцов \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Новая матрица с выделенной памятью 
+\end{DoxyReturn}
+\begin{DoxyNote}{Заметки}
+Все элементы инициализируются нулями 
+\end{DoxyNote}
+\Hypertarget{group__Matrix__Operations_ga65a94ae380c65ff2601e2d473e2ae9ed}\label{group__Matrix__Operations_ga65a94ae380c65ff2601e2d473e2ae9ed} 
+\index{Matrix\_Operations@{Matrix\_Operations}!determinant@{determinant}}
+\index{determinant@{determinant}!Matrix\_Operations@{Matrix\_Operations}}
+\doxysubsubsection{\texorpdfstring{determinant()}{determinant()}}
+{\footnotesize\ttfamily double determinant (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structMatrix}{Matrix}}}]{mat }\end{DoxyParamCaption})}
+
+
+
+Вычисляет определитель матрицы 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em mat} & Квадратная матрица \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Значение определителя 
+\end{DoxyReturn}
+\begin{DoxyNote}{Заметки}
+Используется рекурсивный метод разложения по первой строке
+\end{DoxyNote}
+
+\begin{DoxyParams}{Аргументы}
+{\em mat} & Квадратная матрица \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Значение определителя 
+\end{DoxyReturn}
+\begin{DoxyNote}{Заметки}
+Используется рекурсивный метод разложения 
+\end{DoxyNote}
+\begin{DoxyWarning}{Предупреждения}
+Для неквадратных матриц завершает программу с EXIT\+\_\+\+FAILURE 
+\end{DoxyWarning}
+\Hypertarget{group__Matrix__Operations_ga27f34b7baa60e9b95a0f662398fe0c31}\label{group__Matrix__Operations_ga27f34b7baa60e9b95a0f662398fe0c31} 
+\index{Matrix\_Operations@{Matrix\_Operations}!free\_matrix@{free\_matrix}}
+\index{free\_matrix@{free\_matrix}!Matrix\_Operations@{Matrix\_Operations}}
+\doxysubsubsection{\texorpdfstring{free\_matrix()}{free\_matrix()}}
+{\footnotesize\ttfamily void free\+\_\+matrix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structMatrix}{Matrix}}}]{mat }\end{DoxyParamCaption})}
+
+
+
+Освобождает память, занятую матрицей 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em mat} & Матрица для освобождения \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__Matrix__Operations_ga733d363e0c4ebd683a2f46193473d8b7}\label{group__Matrix__Operations_ga733d363e0c4ebd683a2f46193473d8b7} 
+\index{Matrix\_Operations@{Matrix\_Operations}!load\_matrix\_from\_file@{load\_matrix\_from\_file}}
+\index{load\_matrix\_from\_file@{load\_matrix\_from\_file}!Matrix\_Operations@{Matrix\_Operations}}
+\doxysubsubsection{\texorpdfstring{load\_matrix\_from\_file()}{load\_matrix\_from\_file()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structMatrix}{Matrix}} load\+\_\+matrix\+\_\+from\+\_\+file (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{filename }\end{DoxyParamCaption})}
+
+
+
+Загружает матрицу из файла 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em filename} & Имя файла для загрузки \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Загруженная матрица 
+\end{DoxyReturn}
+\begin{DoxyNote}{Заметки}
+Формат файла\+: первые два числа -\/ размеры матрицы, затем элементы построчно
+\end{DoxyNote}
+
+\begin{DoxyParams}{Аргументы}
+{\em filename} & Путь к файлу с матрицей \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Загруженная матрица 
+\end{DoxyReturn}
+\begin{DoxyNote}{Заметки}
+Формат файла\+: первые два числа -\/ размеры, затем элементы построчно 
+\end{DoxyNote}
+\begin{DoxyWarning}{Предупреждения}
+В случае ошибки чтения завершает программу с EXIT\+\_\+\+FAILURE 
+\end{DoxyWarning}
+\Hypertarget{group__Matrix__Operations_ga2a536d3d18909f58751114066fb1267f}\label{group__Matrix__Operations_ga2a536d3d18909f58751114066fb1267f} 
+\index{Matrix\_Operations@{Matrix\_Operations}!multiply\_matrices@{multiply\_matrices}}
+\index{multiply\_matrices@{multiply\_matrices}!Matrix\_Operations@{Matrix\_Operations}}
+\doxysubsubsection{\texorpdfstring{multiply\_matrices()}{multiply\_matrices()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structMatrix}{Matrix}} multiply\+\_\+matrices (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structMatrix}{Matrix}}}]{mat1,  }\item[{\mbox{\hyperlink{structMatrix}{Matrix}}}]{mat2 }\end{DoxyParamCaption})}
+
+
+
+Умножает две матрицы 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em mat1} & Первая матрица \\
+\hline
+{\em mat2} & Вторая матрица \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Результат умножения 
+\end{DoxyReturn}
+\begin{DoxyNote}{Заметки}
+Количество столбцов первой матрицы должно совпадать с количеством строк второй
+\end{DoxyNote}
+
+\begin{DoxyParams}{Аргументы}
+{\em mat1} & Первая матрица (m×n) \\
+\hline
+{\em mat2} & Вторая матрица (n×k) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Результат умножения (m×k) 
+\end{DoxyReturn}
+\begin{DoxyNote}{Заметки}
+Число столбцов mat1 должно совпадать с числом строк mat2 
+\end{DoxyNote}
+\begin{DoxyWarning}{Предупреждения}
+При несовместимых размерах завершает программу с EXIT\+\_\+\+FAILURE 
+\end{DoxyWarning}
+\Hypertarget{group__Matrix__Operations_ga78ba989ad7e0b1df81195a6d9847a6d5}\label{group__Matrix__Operations_ga78ba989ad7e0b1df81195a6d9847a6d5} 
+\index{Matrix\_Operations@{Matrix\_Operations}!plus\_matrices@{plus\_matrices}}
+\index{plus\_matrices@{plus\_matrices}!Matrix\_Operations@{Matrix\_Operations}}
+\doxysubsubsection{\texorpdfstring{plus\_matrices()}{plus\_matrices()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structMatrix}{Matrix}} plus\+\_\+matrices (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structMatrix}{Matrix}}}]{mat1,  }\item[{\mbox{\hyperlink{structMatrix}{Matrix}}}]{mat2 }\end{DoxyParamCaption})}
+
+
+
+Складывает две матрицы 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em mat1} & Первая матрица \\
+\hline
+{\em mat2} & Вторая матрица \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Результат сложения 
+\end{DoxyReturn}
+\begin{DoxyNote}{Заметки}
+Матрицы должны быть одинакового размера
+\end{DoxyNote}
+
+\begin{DoxyParams}{Аргументы}
+{\em mat1} & Первая матрица \\
+\hline
+{\em mat2} & Вторая матрица \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Результат сложения 
+\end{DoxyReturn}
+\begin{DoxyNote}{Заметки}
+Матрицы должны быть одинакового размера 
+\end{DoxyNote}
+\begin{DoxyWarning}{Предупреждения}
+При несовпадении размеров завершает программу с EXIT\+\_\+\+FAILURE 
+\end{DoxyWarning}
+\Hypertarget{group__Matrix__Operations_ga9d01c8de5e79be4b729b26665fc3b57c}\label{group__Matrix__Operations_ga9d01c8de5e79be4b729b26665fc3b57c} 
+\index{Matrix\_Operations@{Matrix\_Operations}!subtract\_matrices@{subtract\_matrices}}
+\index{subtract\_matrices@{subtract\_matrices}!Matrix\_Operations@{Matrix\_Operations}}
+\doxysubsubsection{\texorpdfstring{subtract\_matrices()}{subtract\_matrices()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structMatrix}{Matrix}} subtract\+\_\+matrices (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structMatrix}{Matrix}}}]{mat1,  }\item[{\mbox{\hyperlink{structMatrix}{Matrix}}}]{mat2 }\end{DoxyParamCaption})}
+
+
+
+Вычитает две матрицы 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em mat1} & Первая матрица \\
+\hline
+{\em mat2} & Вторая матрица \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Результат вычитания 
+\end{DoxyReturn}
+\begin{DoxyNote}{Заметки}
+Матрицы должны быть одинакового размера
+\end{DoxyNote}
+
+\begin{DoxyParams}{Аргументы}
+{\em mat1} & Первая матрица \\
+\hline
+{\em mat2} & Вторая матрица \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Результат вычитания 
+\end{DoxyReturn}
+\begin{DoxyNote}{Заметки}
+Матрицы должны быть одинакового размера 
+\end{DoxyNote}
+\begin{DoxyWarning}{Предупреждения}
+При несовпадении размеров завершает программу с EXIT\+\_\+\+FAILURE 
+\end{DoxyWarning}
+\Hypertarget{group__Matrix__Operations_ga461f32d9c175b99357e8d1a07c15aa81}\label{group__Matrix__Operations_ga461f32d9c175b99357e8d1a07c15aa81} 
+\index{Matrix\_Operations@{Matrix\_Operations}!transpose\_matrix@{transpose\_matrix}}
+\index{transpose\_matrix@{transpose\_matrix}!Matrix\_Operations@{Matrix\_Operations}}
+\doxysubsubsection{\texorpdfstring{transpose\_matrix()}{transpose\_matrix()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structMatrix}{Matrix}} transpose\+\_\+matrix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structMatrix}{Matrix}}}]{mat }\end{DoxyParamCaption})}
+
+
+
+Транспонирует матрицу 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em mat} & Исходная матрица \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Транспонированная матрица
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Аргументы}
+{\em mat} & Исходная матрица (m×n) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Транспонированная матрица (n×m) 
+\end{DoxyReturn}
